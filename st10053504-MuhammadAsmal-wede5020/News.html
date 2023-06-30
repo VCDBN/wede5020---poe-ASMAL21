@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunger Relief Foundation</title>
+</head>
+<body>
+    
+    <div id="NavigationContainer">
+        <img id="CompanyLogo" src="./Gallary/Logo/TheLogo2.png">
+        <a class="NavigationButtons" href="./homepage.html">Home page</a>
+        <a class="NavigationButtons" href="./aboutus.html">About us</a>
+        <a class="NavigationButtons" href="./ProductsAndServices.html">Products and services</a>
+        <a class="NavigationButtons" href="./News.html">News</a>
+        <a class="NavigationButtons" href="./ContactUs.html">Contact</a>
+    </div>
+
+    <script type="text/javascript">
+        function funcClick() {
+                    // body...
+                  var x = document.getElementById("mypara");
+                  x.innerHTML = "Congratulations!!! You have just donated R2";
+                }
+         </script>
+
+    <button type="button" onclick="funcClick()">Click Me For A Donation!!!</button>
+    <p id="mypara"> Donate by just the press of a button</p>
+
+    <div class="UpdateContainer">
+        <h1> Keep up to date</h1>
+
+        <p>Receive latest updates and view more of our projects via our Twitter platform</p>
+
+        <a class="twitter-timeline" href="https://twitter.com/hricares?ref_src=twsrc%5Etfw">Tweets by hricares</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </div>
+
+    <div id="FooterContainer">
+        <table>
+            <tr>
+                <th>Hunger Releif Foundation</th>
+            </tr>
+            <tr>
+                <th>HungerReleifFoundation@gmail.com</th>
+            </tr>
+            <tr>
+                <th>2023/03/29</th>
+            </tr>
+        </table>
+    </div>
+
+</body>
+<style>
+
+    /* Navigation section */
+    #NavigationContainer {
+        position: relative;
+        background-color: aquamarine;
+        width: 1350px;
+        height: 50px;
+    }
+    .NavigationButtons {
+        position: relative;
+        background-color: rgb(156, 156, 156);
+      color: rgb(0, 0, 0);
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      cursor: pointer;
+      top: -16px;
+    }
+    #CompanyLogo {
+        position: relative;
+        width:50px;
+        height: 50px;
+    }
+    /* Navigation section */
+    
+    /* comment section */
+    #FooterContainer {
+        position: relative;
+        top: 420px;
+        background-color: aquamarine;
+    }
+    
+    #FooterContainer table {
+        position: relative;
+        left: 550px;
+    }
+    .UpdateContainer h1 {
+        position: relative;
+        left: 550px;
+        background-color: aquamarine;
+        padding: 20px;
+        border: 200px;
+        text-decoration: wavy;
+    }
+ /* comment section */
+ @media(max-width:960px){
+    .testimonial-box{
+        width: 45%;
+        padding: 10px;
+    }
+}
+    </style>
+</html>

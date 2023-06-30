@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunger Releif Foundation</title>
+    <script defer src="ContactUs.js"></script>
+</head>
+<body>
+    
+    <div id="NavigationContainer">
+        <img id="CompanyLogo" src="./Gallary/Logo/TheLogo2.png">
+        <a class="NavigationButtons" href="./homepage.html">Home page</a>
+        <a class="NavigationButtons" href="./aboutus.html">About us</a>
+        <a class="NavigationButtons" href="./ProductsAndServices.html">Products and services</a>
+        <a class="NavigationButtons" href="./News.html">News</a>
+        <a class="NavigationButtons" href="./ContactUs.html">Contact</a>
+    </div>
+
+    <div class="MainPageContainer">
+
+        <div id="PeopleContainer">
+            <h1>People</h1>
+
+            <table>
+                  
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Number</th>
+                    <th>Working Hours</th>
+                    <th>City</th>
+                </tr>    
+
+
+                <tr>
+                    <th>John Anchor</th>
+                    <th>JohnAnchor22@gmail.com</th>
+                    <th>0732100198</th>
+                    <th>07:30 - 15:00</th>
+                    <th>Durban</th>
+                </tr>
+
+                <tr>                    
+                    <th>Donald Erwin</th>
+                    <th>Erwinn220@gmail.com</th>
+                    <th>0819903421</th>
+                    <th>08:00-15:30</th>
+                    <th>Istanbul</th>
+                </tr>
+
+            <tr>                    
+                <th>Zayd Khan</th>
+                <th>Zayddkhann01@gmail.com</th>
+                <th>0819906541</th>
+                <th>07:30-14:50</th>
+                <th>Aleppo</th>
+            </tr>  
+
+            <tr>
+                <th>Sumayya Patel</th>
+                <th>Sumayyyapatelll@gmail.com</th>
+                <th>0819906231</th>
+                <th>09:00-18:00</th>
+                <th>Johannesburg</th>
+            </tr>
+
+            <tr>
+                <th>Sumendran naidoo</th>
+                <th>Naidoo990@gmail.com</th>
+                <th>0203906231</th>
+                <th>10:00-17:00</th>
+                <th>Cape Town</th>
+            </tr>
+
+            </table> 
+            
+<!-- so the mailto function is a uniform resource identifier that communicates by redirecting to an email address that is specified within the action method
+    
+    the POST method gets the data from the page and sends the data to email address
+    
+    enctype - is how the data will be submitted when sent to the server
+    this is encoded -->
+
+     <div id="error"></div>
+     <form id="form" action="mailto:moeasmal786@gmail.com" method="POST" enctype="text/plain">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+        <div id="Location">
+            <table>
+                <tr>
+                    <th>MAIN HEADQUATERS, DURBAN</th>
+                </tr>
+                <tr>
+                    <th>Varsity College Entrance</th>
+                </tr>
+                <tr>
+                    <th>1 Link Rd, Dawncliffe, Westville, 3629</th>
+                </tr>
+                <tr>
+                    <th>HungerReleifFoundation@gmail.com</th>
+                </tr>
+                <tr>
+                    <th>+27732100198</th>
+                </tr>
+            </table>
+
+            <div id="mapdiv">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.0966359810827!2d30.923850229520337!3d-29.839170365258465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef701291b6921bd%3A0xd161689abce04f5a!2sVarsity%20College%20Entrance!5e0!3m2!1sen!2sza!4v1680124192646!5m2!1sen!2sza" width="600" height="450"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div> 
+        
+
+
+
+    <div id="FooterContainer">
+        <table>
+            <tr>
+                <th>Hunger Releif Foundation</th>
+            </tr>
+            <tr>
+                <th>HungerReleifFoundation@gmail.com</th>
+            </tr>
+            <tr>
+                <th>2023/03/29</th>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+
+<style>
+
+    /* Navigation section */
+    #NavigationContainer {
+        position: relative;
+        background-color: aquamarine;
+        width: 1350px;
+        height: 50px;
+    }
+    .NavigationButtons {
+        position: relative;
+        background-color: rgb(156, 156, 156);
+      color: rgb(0, 0, 0);
+      padding: 10px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      cursor: pointer;
+      top: -16px;
+    }
+    #CompanyLogo {
+        position: relative;
+        width:50px;
+        height: 50px;
+    }
+    /* Navigation section */
+    
+    /* comment section */
+    #FooterContainer {
+        position: relative;
+        top: 240px;
+        background-color: aquamarine;
+    }
+    
+    #FooterContainer table {
+        position: relative;
+        left: 550px;
+    }
+    #Location {
+        position: absolute;
+        left: 200px;
+        top: 380px;
+    }
+    #mapdiv {
+        position: absolute;
+        left: 530px;
+        top: -270px;
+        width: 600px;
+        border-style: solid;
+  border-color: aquamarine;
+    }
+    table, th, td {
+  border: 3px solid aquamarine;
+}
+#PeopleContainer {
+    position: relative;
+    left: 40px;
+}
+#PeopleContainer h1 {
+    position: relative;
+    left: 260px;
+}
+ /* comment section */
+ @media(max-width:960px){
+    .testimonial-box{
+        width: 45%;
+        padding: 10px;
+    }
+}
+</style>
+</html>
